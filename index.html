@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cash register</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="app.js" type="text/javascript"></script> -->
+</head>
+<body>
+    <section id="first-sec">
+        <h1 style="text-align: center;">CASH REGISTER MANAGER </h1>
+        <!-- <br> -->
+        <!-- <form> -->
+            <div id="input1">
+                <label for="input1">Bill Amount:</label>
+                <input id="bill-amount" type="number" name="input1" placeholder="₹">
+            </div>
+            <br>
+            <div>
+                <label for="input2">Cash Received:</label>
+                <input id="cash-rcvd" type="number" name="input2" placeholder="₹" disabled>
+            </div>
+            
+            <br>
+            <!-- <input type="submit" value="jshhjf"> -->
+            <!-- <button id="checkBtn">Check</button> -->
+            <button id="resetBtn" type="reset">Reset</button>
+            <!-- </form> -->
+            <button id="checkBtn">Check</button>
+            <!-- <button onClick="window.location.reload();">Refresh Page</button> -->
+        
+            <div id="error-msg"></div>
+
+            <div>
+                <table id="main-table">
+                    <tr id="noteCount"> 
+                        <th>How many notes</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr id="kindOfNotes">
+                        <th>Kind of Notes</th>
+                        <td>2000</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>200</td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr id="checkbox-row">
+                        <th>Availability</th>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked> 
+                        </td>
+                        <td class="checkbox"> 
+                            <input type="checkbox" checked disabled> 
+                        </td>
+                        
+                    </tr>
+        
+                </table>
+            </div>
+            <!-- <button>View History</button> -->
+            
+
+            
+
+            <br>
+            <button id="view-history-btn">View History</button>
+
+    </section>
+
+    <!-- <button id="view-history-btn">View History</button> -->
+    
+
+    <section id="history-section" style="display: none;">
+        <button id="hide-history-btn">Hide History</button>
+        <button id="clear-history-btn">Clear History</button>
+
+        <div>
+            <table id="history-table">
+                <tr>
+                    <th>Index</th>
+                    <th>Bill Amount</th>
+                    <th>Cash Received</th>
+                    <th>Money Made</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+
+    <script src="app.js" type="text/javascript" dref></script>
+    
+</body>
+</html>
