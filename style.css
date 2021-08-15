@@ -29,6 +29,14 @@ section{
     background-color: #E5E7EB;
     border-radius: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    section {
+      width: 100%;
+    }
+  }
+
 #error-msg{
     display:none;
     font-size: 2rem;
